@@ -63,4 +63,4 @@ scores = nx.pagerank(nx_graph)
 
 ranked_sents = sorted(((scores[i], s) for i, s in enumerate(sents)), reverse=True)
 for i in range(10):
-    print(ranked_sents[i][1]+'\n------------------------------------------------------')
+    print('------------------------------------------------------\n'+ranked_sents[i][1])
